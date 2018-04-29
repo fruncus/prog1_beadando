@@ -30,6 +30,8 @@ import numpy as np
 # print(prime|{1})
 # print(len(prime))
 
+
+
 prim=5
 i=3
 while i<6:
