@@ -32,20 +32,23 @@ import numpy as np
 
 
 
-prim=5
-i=3
-while i<6:
+prim=4
+i=2
+while i<10001:
+    prim+=1
+    flag=True
     osztok=2
     if prim%2!=0:
         j=2
-        while j<(prim//2)+1):
+        while j<((prim//2)+1):
             if prim%j!=0:
                 j+=1
             else:
-
-
-    if osztok==2:
+                flag=False
+                j+=1
+    else:
+        flag=False
+    if osztok==2 and flag==True:
         i+=1
-    prim+=1
 
 print(prim)
