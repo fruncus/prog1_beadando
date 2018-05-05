@@ -1,4 +1,5 @@
 import numpy as np
+from datetime import datetime
 
 # primek=[1]
 # p=1
@@ -31,7 +32,7 @@ import numpy as np
 # print(len(prime))
 
 
-
+start = datetime.now()
 prim=4
 i=2
 while i<10001:
@@ -39,7 +40,7 @@ while i<10001:
     flag=True
     osztok=2
     if prim%2!=0:
-        j=2
+        j=3
         while j<((prim//2)+1):
             if prim%j!=0:
                 j+=1
@@ -52,3 +53,4 @@ while i<10001:
         i+=1
 
 print(prim)
+print (datetime.now()-start)
