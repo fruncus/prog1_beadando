@@ -1,17 +1,21 @@
-num=[]
-i=100
-j=100
-while i<1000:
-    while j<1000:
+i=999
+j=999
+while i>99:
+    while j>99:
         number=i*j
         number_string=str(number)
-        ch=number_string[0]
-        ch2=number_string[:-1]
-        if ch==ch2:
-            flag=True
-        else:
-            flag=False
+        k=int(len(number_string))/2
+        for e in range(int(k)):
+            for f in range (int(len(number_string))-1,int(k),-1):
+                if number_string[e]==number_string[f]:
+                    flag=True
+                    continue
+                else:
+                    flag=False
+                    break
         if flag==True:
-            ch+=1
-            ch2-=1
-    i+=1
+            print(number)
+            exit()
+    i-=1
+    j-=1
+
