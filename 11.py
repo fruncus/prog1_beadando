@@ -45,7 +45,7 @@ while i<10001:
                 j+=1
             else:
                 flag=False
-                j+=1
+                break
     else:
         flag=False
     if osztok==2 and flag==True:
