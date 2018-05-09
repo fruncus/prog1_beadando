@@ -4,20 +4,6 @@ def palindrome(n):
         for j in range(999,n,-1):
             number=i*j
             number_string=str(number)
-    #     k=int(len(number_string))/2
-    #     for e in range(int(k)):
-    #         for f in range (int(len(number_string))-1,int(k),-1):
-    #             if number_string[e]==number_string[f]:
-    #                 flag=True
-    #                 continue
-    #             else:
-    #                 flag=False
-    #                 break
-    #     if flag==True:
-    #         print(number)
-    #         exit()
-    # i-=1
-    # j-=1
             k=len(number_string)/2
             kozepe=int(k)
             eleje=number_string[0:kozepe]
