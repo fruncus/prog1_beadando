@@ -48,4 +48,4 @@ def nthprims(n):
 
 
 # print(nthprim(10001))
-print(nthprims(10001))
+print("the 10001st prime number is",nthprims(10001))
