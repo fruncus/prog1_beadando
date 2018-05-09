@@ -26,6 +26,6 @@ def translator(text):
 
 
 
-phrase=input("Irj egy mondatot: ")
-print("A masik nyelven: ")
+phrase=input("write something: ")
+print("translated: ")
 translator(phrase)
